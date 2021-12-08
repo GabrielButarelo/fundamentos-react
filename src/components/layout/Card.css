@@ -21,3 +21,6 @@
   color: #000;
   padding: 10px;
 }
+.Card .Content ul {
+  list-style: none;
+}

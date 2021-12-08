@@ -6,6 +6,10 @@ import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from './components/repeticao/ListaAlunos';
+import ListaProdutos from './components/repeticao/ListaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 import Card from './components/layout/Card';
 
@@ -13,6 +17,19 @@ export default _ =>
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="#7 - Renderização Condicional" color="#080">
+          <ParOuImpar numero={20} />
+          <UsuarioInfo usuario={{nome: 'Gabriel'}}></UsuarioInfo>
+        </Card>
+
+        <Card titulo="#7 - Exercicio Repetição" color="#008">
+          <ListaProdutos />
+        </Card>
+
+        <Card titulo="#6 - Repetição" color="#080">
+          <ListaAlunos />
+        </Card>
+
         <Card titulo="#5 - Componente com Filhos" color="#008">
           <Familia sobrenome="Silva">
             <FamiliaMembro nome="Pedro"/>
